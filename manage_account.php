@@ -7,9 +7,7 @@
         header("location: http://localhost/hospital_management_system/login.php");
     }
     require 'function/db_connect.php';
-    $sql = "SELECT * FROM account";
-    $result = mysqli_query($conn, $sql);
-?> 
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -24,6 +22,13 @@
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
         <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+        <style>
+            .table>thead>tr>th,
+            .table-borderless td,
+            .table-borderless th {
+                border: 0 !important;
+            }
+        </style>
     </head>
 
     <body> 
