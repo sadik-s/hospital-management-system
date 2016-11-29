@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
  require 'function/db_connect.php';
 
@@ -41,13 +41,11 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
 ?>
 
 
-=======
->>>>>>> c161167ff5262b29a752081c85ac70c9f587fc88
 <div class="content">
     <div class="container-fluid">    
         <div class="row">
             <div class="col-md-12">
-<<<<<<< HEAD
+
                 <h3>Welcome To Evis Hospital Management System</h3>
 				
 				<div class="col-md-4">
@@ -101,10 +99,10 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
 			     </div>
 				</div>
                 
-=======
+
                 <h3>Welcome To Hospital Management System</h3>
 				<img src="assets/img/b.jpg"  style="width:304px;height:228px;">
->>>>>>> c161167ff5262b29a752081c85ac70c9f587fc88
+
             </div>                  
         </div>      
     </div>    
