@@ -51,14 +51,14 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3><?php echo $total_patient ?> Patients </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo $total_patient ?></label> Patients </h3>
 			    	</div>
 			     </div>
 				</div>
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3><?php echo  $total_customer  ?> Customers </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo  $total_customer  ?></label> Customers </h3>
 
 			    	</div>
 			     </div>
@@ -66,35 +66,35 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3><?php echo   $total_supplier  ?> Suppliers </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo   $total_supplier  ?></label> Suppliers </h3>
 			    	</div>
 			     </div>
 				</div>
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3><?php echo  $total_bed ?> Beds </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo  $total_bed ?></label> Beds </h3>
 			    	</div>
 			     </div>
 				</div>
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3><?php echo $total_department  ?> Departments </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo $total_department  ?></label> Departments </h3>
 			    	</div>
 			     </div>
 				</div>
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3><?php echo  $total_doctor ?> Doctors </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo  $total_doctor ?></label> Doctors </h3>
 			    	</div>
 			     </div>
 				</div>
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3><?php echo  $total_ward ?> Wards </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo  $total_ward ?></label> Wards </h3>
 			    	</div>
 			     </div>
 				</div>

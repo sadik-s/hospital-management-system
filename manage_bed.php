@@ -7,7 +7,7 @@
         header("location: http://localhost/hospital_management_system/login.php");
     }
     require 'function/db_connect.php';
-    $sql = "SELECT * FROM tbl_bed";
+    $sql = "SELECT tbl_bed.bed_id, bed_name, bed_fee, bed_total_sit, COUNT(tbl_patient.bed_id) AS bed_booked FROM tbl_bed LEFT JOIN tbl_patient ON tbl_bed.bed_id = tbl_patient.bed_id GROUP BY(tbl_bed.bed_id)";
     $result = mysqli_query($conn, $sql);
 ?> 
 <!DOCTYPE html>

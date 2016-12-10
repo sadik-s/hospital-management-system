@@ -46,6 +46,12 @@
             <i class="pe-7s-umbrella"></i> 
             <p>Patient Manager</p>
         </a>
+    </li>
+    <li>
+        <a href="manage_pharmacist.php">
+            <i class="pe-7s-umbrella"></i>
+            <p>Pharmacist Manager</p>
+        </a>
     </li> 
     <li>
         <a href="manage_department.php">
@@ -57,10 +63,7 @@
         <a href="manage_account.php">
             <i class="pe-7s-drawer"></i> 
             <p>Account Manager</p>
-        </a> 
-		
-		
-		
+        </a>
 		
 
 </ul>

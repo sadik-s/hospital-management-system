@@ -20,7 +20,7 @@
                     <a href="http://localhost/hospital_management_system/function/logout.php">
                         Log out
                     </a>
-                </li> 
+                </li>
             </ul>
         </div>
     </div>

@@ -1,7 +1,8 @@
 <?php
 $test_id = filter_input(INPUT_POST, 'test_id');
 $test_name = filter_input(INPUT_POST, 'test_name');
-$sql = "UPDATE tbl_test SET test_name='$test_name' WHERE test_id='$test_id' ";
+$cost = filter_input(INPUT_POST, 'cost');
+$sql = "UPDATE tbl_test SET test_name='$test_name', cost='$cost' WHERE test_id='$test_id' ";
 ?>
 <div class="content">
     <div class="container-fluid">
@@ -33,7 +34,11 @@ $sql = "UPDATE tbl_test SET test_name='$test_name' WHERE test_id='$test_id' ";
                                         <label>Test Name</label>
                                         <input type="text" name="test_name" class="form-control" value="<?php echo $row['test_name']?>">
                                         <input type="hidden" name="test_id" class="form-control" value="<?php echo $row['test_id']?>">
-                                    </div>        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Test Name</label>
+                                        <input type="text" name="cost" class="form-control" value="<?php echo $row['cost']?>">
+                                    </div>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-info btn-fill">Edit Test</button>

@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2016 at 06:30 PM
--- Server version: 10.1.13-MariaDB
--- PHP Version: 7.0.5
+-- Generation Time: Dec 03, 2016 at 05:56 PM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_evis_hms`
+-- Database: `db_evis_hmss`
 --
 
 -- --------------------------------------------------------
@@ -36,14 +36,6 @@ CREATE TABLE `account` (
   `patient_nid` int(20) NOT NULL,
   `amount` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `account`
---
-
-INSERT INTO `account` (`id`, `ward_id`, `bed_id`, `patient_name`, `patient_address`, `patient_phone`, `patient_nid`, `amount`) VALUES
-(5, 1, 1, 'Mahdi', 'dfdsf', '5334', 44, 44),
-(6, 1, 1, 'fff', 'fff', '44444', 33333, 222222);
 
 -- --------------------------------------------------------
 
@@ -74,17 +66,19 @@ INSERT INTO `tbl_admin` (`admin_id`, `admin_name`, `admin_email`, `admin_passwor
 
 CREATE TABLE `tbl_bed` (
   `bed_id` int(2) NOT NULL,
-  `bed_name` varchar(10) NOT NULL
+  `bed_name` varchar(10) NOT NULL,
+  `bed_fee` float NOT NULL DEFAULT '0',
+  `bed_total_sit` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_bed`
 --
 
-INSERT INTO `tbl_bed` (`bed_id`, `bed_name`) VALUES
-(1, 'General'),
-(2, 'ICU'),
-(3, 'Children');
+INSERT INTO `tbl_bed` (`bed_id`, `bed_name`, `bed_fee`, `bed_total_sit`) VALUES
+(2, 'ICU', 5000, 5),
+(3, 'Children', 150, 20),
+(4, 'General', 200, 30);
 
 -- --------------------------------------------------------
 
@@ -136,6 +130,27 @@ INSERT INTO `tbl_doctor` (`doctor_id`, `doctor_name`, `department_id`, `doctor_a
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_medicine`
+--
+
+CREATE TABLE `tbl_medicine` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_medicine`
+--
+
+INSERT INTO `tbl_medicine` (`id`, `name`) VALUES
+(1, 'Allertrol'),
+(2, 'Losectill'),
+(3, 'Ecap'),
+(4, 'Toska');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_patient`
 --
 
@@ -156,8 +171,20 @@ CREATE TABLE `tbl_patient` (
 --
 
 INSERT INTO `tbl_patient` (`patient_id`, `ward_id`, `bed_id`, `patient_name`, `patient_address`, `patient_phone`, `patient_nid`, `admission_date`, `release_date`) VALUES
-(1, 1, 3, 'Jebin', 'Mirpur 2', '01780808575', '12343424324327623746', '2016-03-31', '2016-05-01'),
+(1, 1, 4, 'Jebin', 'Rupnagar, Mirpur 2, Dhaka-1216', '01780808575', '1234342432432762', '2016-03-31', '2016-05-01'),
 (2, 4, 2, 'Md Khairul Bashar', 'Khulna', '01719020278', '3243526862896436', '2016-04-04', '2016-05-16');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_patient_test`
+--
+
+CREATE TABLE `tbl_patient_test` (
+  `id` int(11) NOT NULL,
+  `patient_id` int(11) NOT NULL,
+  `test_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -178,7 +205,7 @@ CREATE TABLE `tbl_prescription` (
 --
 
 INSERT INTO `tbl_prescription` (`prescription_id`, `doctor_id`, `patient_id`, `prescription`, `prescription_time`) VALUES
-(1, 1, 1, 'Paracetamol', '2016-03-31 05:41:44');
+(1, 1, 2, 'Paracetamol', '2016-03-31 05:41:44');
 
 -- --------------------------------------------------------
 
@@ -201,7 +228,10 @@ CREATE TABLE `tbl_report` (
 
 INSERT INTO `tbl_report` (`report_id`, `test_id`, `patient_id`, `report_description`, `report_result`, `report_published_date`) VALUES
 (1, 2, 1, 'O Negative ', '', '2016-03-31'),
-(2, 1, 2, 'A +', '', '2016-05-03');
+(3, 3, 1, 'some description here', 'Negative', '2016-11-26'),
+(4, 2, 1, '', 'Positive', '2016-11-17'),
+(5, 1, 2, 'some escription', 'Positive', '2016-11-16'),
+(6, 2, 2, '', 'Positive', '2016-11-28');
 
 -- --------------------------------------------------------
 
@@ -211,18 +241,19 @@ INSERT INTO `tbl_report` (`report_id`, `test_id`, `patient_id`, `report_descript
 
 CREATE TABLE `tbl_test` (
   `test_id` int(2) NOT NULL,
-  `test_name` varchar(100) NOT NULL
+  `test_name` varchar(100) NOT NULL,
+  `cost` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_test`
 --
 
-INSERT INTO `tbl_test` (`test_id`, `test_name`) VALUES
-(1, 'Blood Group'),
-(2, 'HIV'),
-(3, 'Pregnancy Test (Blood) '),
-(4, 'Pregnancy Test (Urine) ');
+INSERT INTO `tbl_test` (`test_id`, `test_name`, `cost`) VALUES
+(1, 'Blood Group', 200),
+(2, 'HIV', 400),
+(3, 'Pregnancy Test (Blood) ', 250),
+(4, 'Pregnancy Test (Urine) ', 300);
 
 -- --------------------------------------------------------
 
@@ -280,10 +311,22 @@ ALTER TABLE `tbl_doctor`
   ADD PRIMARY KEY (`doctor_id`);
 
 --
+-- Indexes for table `tbl_medicine`
+--
+ALTER TABLE `tbl_medicine`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_patient`
 --
 ALTER TABLE `tbl_patient`
   ADD PRIMARY KEY (`patient_id`);
+
+--
+-- Indexes for table `tbl_patient_test`
+--
+ALTER TABLE `tbl_patient_test`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tbl_prescription`
@@ -317,7 +360,7 @@ ALTER TABLE `tbl_ward`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_admin`
 --
@@ -327,7 +370,7 @@ ALTER TABLE `tbl_admin`
 -- AUTO_INCREMENT for table `tbl_bed`
 --
 ALTER TABLE `tbl_bed`
-  MODIFY `bed_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `bed_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tbl_department`
 --
@@ -339,10 +382,20 @@ ALTER TABLE `tbl_department`
 ALTER TABLE `tbl_doctor`
   MODIFY `doctor_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `tbl_medicine`
+--
+ALTER TABLE `tbl_medicine`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
 -- AUTO_INCREMENT for table `tbl_patient`
 --
 ALTER TABLE `tbl_patient`
   MODIFY `patient_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `tbl_patient_test`
+--
+ALTER TABLE `tbl_patient_test`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_prescription`
 --
@@ -352,7 +405,7 @@ ALTER TABLE `tbl_prescription`
 -- AUTO_INCREMENT for table `tbl_report`
 --
 ALTER TABLE `tbl_report`
-  MODIFY `report_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `report_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `tbl_test`
 --

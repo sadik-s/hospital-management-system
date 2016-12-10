@@ -30,6 +30,7 @@
                         <table class="table table-hover table-striped">
                             <thead>
                                 <th>Name</th>
+                                <th>Test Fee</th>
                                 <th>Action</th>
                             </thead>
                             <tbody>
@@ -38,6 +39,7 @@
                                     ?>    
                                     <tr>
                                         <td><?php echo $row['test_name'] ?></td>
+                                        <td><?php echo $row['cost'] ?></td>
                                         <td>
                                             <a href="edit_test.php?id=<?php echo $row['test_id'] ?>" class="btn btn-primary" data-toggle="tooltip" title="Edit Test"><i class="fa fa-pencil-square-o"></i></a>
                                             <a href="function/delete_test.php?id=<?php echo $row['test_id'] ?>" class="btn btn-danger" data-toggle="tooltip" title="Delete Test" onclick="return check_delete();"><i class="fa fa-trash"></i></a>

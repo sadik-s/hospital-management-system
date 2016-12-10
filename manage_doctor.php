@@ -26,11 +26,11 @@
         <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     </head>
 
-    <body> 
-        <div class="wrapper">
-            <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">    
+    <body>
+        <div class="wrapper" style="height: 1000px !important;">
+            <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
                 <div class="sidebar-wrapper">
-                    <div class="logo">
+                    <div class="logo" >
                         <a href="index.php" class="simple-text">
                             HMS
                         </a>
