@@ -1,8 +1,8 @@
 <?php
     session_start();
-    $admin_name=$_SESSION["admin_name"];
+    $type=$_SESSION["type"];
 
-    if ($admin_name == NULL)
+    if ($type == NULL)
     {
         header("location: http://localhost/hospital_management_system/login.php");
     }

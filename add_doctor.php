@@ -18,6 +18,7 @@
     $doctor_email=filter_input(INPUT_POST, 'doctor_email');
     $doctor_visiting_hour=filter_input(INPUT_POST, 'doctor_visiting_hour');
     $doctor_status=filter_input(INPUT_POST, 'doctor_status');
+    $doctor_password=filter_input(INPUT_POST, 'doctor_password');
 
     $sql_insert = "INSERT INTO tbl_doctor (doctor_name,department_id,doctor_address,doctor_phone,doctor_email,doctor_visiting_hour,doctor_status)
         VALUES ('$doctor_name','$department_id','$doctor_address','$doctor_phone','$doctor_email','$doctor_visiting_hour','$doctor_status')";
@@ -39,7 +40,7 @@
     </head>
 
     <body> 
-        <div class="wrapper">
+        <div class="wrapper" style="height: 1000px;">
             <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">    
                 <div class="sidebar-wrapper">
                     <div class="logo">

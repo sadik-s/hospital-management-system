@@ -31,16 +31,16 @@
         </style>
     </head>
 
-    <body> 
-        <div class="wrapper">
-            <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">    
+    <body>
+        <div class="wrapper" style="height: 1000px;">
+            <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
                 <div class="sidebar-wrapper">
                     <div class="logo">
                         <a href="index.php" class="simple-text">
                             HMS
                         </a>
                     </div>
-                    <?php require 'content/nav.php'; ?> 
+                    <?php require 'content/nav.php'; ?>
                 </div>
             </div>
             <div class="main-panel">

@@ -27,7 +27,7 @@
                         <p class="category">Here is you can manage your Hospital Prescriptions</p>
                     </div>
                     <div class="content table-responsive table-full-width">
-                        <table class="table table-hover table-striped">
+                        <table class="table table-hover table-striped" id="myTable">
                             <thead>
                                 <th>Doctor Name</th>
                                 <th>Patient Name</th>

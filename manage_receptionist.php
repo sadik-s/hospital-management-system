@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 $admin_name=$_SESSION["admin_name"];
 
 if ($admin_name == NULL)
@@ -7,7 +7,7 @@ if ($admin_name == NULL)
     header("location: http://localhost/hospital_management_system/login.php");
 }
 require 'function/db_connect.php';
-$sql = "SELECT * FROM tbl_pharmacist";
+$sql = "SELECT * FROM tbl_admin WHERE type=4";
 $result = mysqli_query($conn, $sql);
 ?>
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ $result = mysqli_query($conn, $sql);
 </head>
 
 <body>
-<div class="wrapper"  style="height: 1000px !important;">
+<div class="wrapper" style="height: 1000px;">
     <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
         <div class="sidebar-wrapper">
             <div class="logo">
@@ -41,7 +41,7 @@ $result = mysqli_query($conn, $sql);
     </div>
     <div class="main-panel">
         <?php require 'content/header.php'; ?>
-        <?php require 'content/pharmacist_manager.php'; ?>
+        <?php require 'content/receptionist_manager.php'; ?>
         <?php require 'content/footer.php'; ?>
     </div>
 </div>

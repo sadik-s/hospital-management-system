@@ -42,7 +42,7 @@ $sql = "INSERT INTO account (ward_id,bed_id,patient_name,patient_address,patient
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper" style="height: 1000px;">
     <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
         <div class="sidebar-wrapper">
             <div class="logo">

@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2016 at 05:56 PM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 5.5.38
+-- Generation Time: Dec 16, 2016 at 07:20 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,6 +23,31 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `accesses`
+--
+
+CREATE TABLE `accesses` (
+  `id` int(11) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `access_id` int(1) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `description` int(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `accesses`
+--
+
+INSERT INTO `accesses` (`id`, `email`, `password`, `access_id`, `type`, `description`) VALUES
+(5, 'admin@mail.com', 'admin', 1, 'admin', NULL),
+(6, 'doctor@mail.com', 'doctor', 2, 'doctor', NULL),
+(7, 'nurse@mail.com', 'nurse', 3, 'nurse', NULL),
+(8, 'pharmacist@mail.com', 'pharmacist', 4, 'pharmacist', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `account`
 --
 
@@ -35,6 +60,22 @@ CREATE TABLE `account` (
   `patient_phone` varchar(20) NOT NULL,
   `patient_nid` int(20) NOT NULL,
   `amount` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_accounts`
+--
+
+CREATE TABLE `tbl_accounts` (
+  `id` int(11) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `access_id` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -151,6 +192,27 @@ INSERT INTO `tbl_medicine` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_medicine_history`
+--
+
+CREATE TABLE `tbl_medicine_history` (
+  `history_id` int(11) NOT NULL,
+  `patient_id` int(50) NOT NULL,
+  `medicines` varchar(255) NOT NULL,
+  `total_cost` int(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_medicine_history`
+--
+
+INSERT INTO `tbl_medicine_history` (`history_id`, `patient_id`, `medicines`, `total_cost`) VALUES
+(1, 1, '"Allertrol", "Ecap", "Toska"', 100),
+(2, 1, '"Losectill", "Toska"', 50);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_patient`
 --
 
@@ -185,6 +247,28 @@ CREATE TABLE `tbl_patient_test` (
   `patient_id` int(11) NOT NULL,
   `test_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_pharmacist`
+--
+
+CREATE TABLE `tbl_pharmacist` (
+  `pharmacist_id` int(11) NOT NULL,
+  `pharmacist_name` varchar(50) NOT NULL,
+  `pharmacist_address` varchar(50) NOT NULL,
+  `pharmacist_phone` varchar(50) NOT NULL,
+  `pharmacist_email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_pharmacist`
+--
+
+INSERT INTO `tbl_pharmacist` (`pharmacist_id`, `pharmacist_name`, `pharmacist_address`, `pharmacist_phone`, `pharmacist_email`) VALUES
+(2, 'sadia afroz', 'mirpur-2', '0176377758554564', 'sadia@mail.com'),
+(3, 'asdasd', 'asdasd', 'asdasd', 'asdasd');
 
 -- --------------------------------------------------------
 
@@ -281,9 +365,21 @@ INSERT INTO `tbl_ward` (`ward_id`, `ward_name`) VALUES
 --
 
 --
+-- Indexes for table `accesses`
+--
+ALTER TABLE `accesses`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `account`
 --
 ALTER TABLE `account`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_accounts`
+--
+ALTER TABLE `tbl_accounts`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -317,6 +413,12 @@ ALTER TABLE `tbl_medicine`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_medicine_history`
+--
+ALTER TABLE `tbl_medicine_history`
+  ADD PRIMARY KEY (`history_id`);
+
+--
 -- Indexes for table `tbl_patient`
 --
 ALTER TABLE `tbl_patient`
@@ -327,6 +429,12 @@ ALTER TABLE `tbl_patient`
 --
 ALTER TABLE `tbl_patient_test`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_pharmacist`
+--
+ALTER TABLE `tbl_pharmacist`
+  ADD PRIMARY KEY (`pharmacist_id`);
 
 --
 -- Indexes for table `tbl_prescription`
@@ -357,10 +465,20 @@ ALTER TABLE `tbl_ward`
 --
 
 --
+-- AUTO_INCREMENT for table `accesses`
+--
+ALTER TABLE `accesses`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_accounts`
+--
+ALTER TABLE `tbl_accounts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_admin`
 --
@@ -387,6 +505,11 @@ ALTER TABLE `tbl_doctor`
 ALTER TABLE `tbl_medicine`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
+-- AUTO_INCREMENT for table `tbl_medicine_history`
+--
+ALTER TABLE `tbl_medicine_history`
+  MODIFY `history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT for table `tbl_patient`
 --
 ALTER TABLE `tbl_patient`
@@ -396,6 +519,11 @@ ALTER TABLE `tbl_patient`
 --
 ALTER TABLE `tbl_patient_test`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_pharmacist`
+--
+ALTER TABLE `tbl_pharmacist`
+  MODIFY `pharmacist_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `tbl_prescription`
 --

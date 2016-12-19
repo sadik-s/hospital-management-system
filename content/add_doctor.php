@@ -16,6 +16,8 @@
                             <?php
                                 if (!empty($doctor_name)) {
                                     if (mysqli_query($conn, $sql_insert)) {
+                                        $query = "INSERT INTO tbl_admin (admin_name, admin_email, admin_password, admin_status, type) VALUES ('$doctor_name','$doctor_email','$doctor_password', $doctor_status, 2 )";
+                                        $result = mysqli_query($conn , $query);
                                         echo "New record created successfully";
                                     } else {
                                         echo "Error: " . $sql_insert . "<br>" . mysqli_error($conn);
@@ -63,6 +65,12 @@
                                     <div class="form-group">
                                         <label>Doctor Visiting Hour</label>
                                         <input type="text" name="doctor_visiting_hour" class="form-control">
+                                    </div>        
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label>Doctor Password</label>
+                                        <input type="text" name="doctor_password" class="form-control">
                                     </div>        
                                 </div>
                                 <div class="col-md-8">

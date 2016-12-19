@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 $admin_name=$_SESSION["admin_name"];
 
 if ($admin_name == NULL)
@@ -7,8 +7,11 @@ if ($admin_name == NULL)
     header("location: http://localhost/hospital_management_system/login.php");
 }
 require 'function/db_connect.php';
-$sql = "SELECT * FROM tbl_pharmacist";
-$result = mysqli_query($conn, $sql);
+$receptionist_id = filter_input(INPUT_GET, 'id');
+$sql = "SELECT * FROM tbl_admin WHERE admin_id='$receptionist_id'";
+$result=mysqli_query($conn, $sql);
+$receptionist = mysqli_fetch_assoc($result);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +22,6 @@ $result = mysqli_query($conn, $sql);
     <title>HMS Dashboard</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +30,7 @@ $result = mysqli_query($conn, $sql);
 </head>
 
 <body>
-<div class="wrapper"  style="height: 1000px !important;">
+<div class="wrapper" style="height: 1000px;">
     <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
         <div class="sidebar-wrapper">
             <div class="logo">
@@ -41,17 +43,11 @@ $result = mysqli_query($conn, $sql);
     </div>
     <div class="main-panel">
         <?php require 'content/header.php'; ?>
-        <?php require 'content/pharmacist_manager.php'; ?>
+        <?php require 'content/edit_receptionist.php'; ?>
         <?php require 'content/footer.php'; ?>
     </div>
 </div>
 </body>
 <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
-<script>
-    $(document).ready(function(){
-        $('#myTable').DataTable();
-    });
-</script>
 </html>

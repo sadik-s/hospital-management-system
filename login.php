@@ -120,11 +120,11 @@
             <form action="http://localhost/hospital_management_system/function/login.php" method="POST">
                 <div class="login-form">
                     <h3>Email:</h3>
-                    <input type="text" name="admin_email" placeholder="Email"/><br>
+                    <input type="text" name="email" placeholder="Email"/><br>
                     <h3>Password:</h3>
-                    <input type="password" name="admin_password" placeholder="Password"/>
+                    <input type="password" name="password" placeholder="Password"/>
                     <br>
-                    <button type="submit" value="submit" class="button"/>Login</button>
+                    <button type="submit" value="submit" name="submit" class="button"/>Login</button>
                     <br><br>
                 </div>
             </form>
