@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "db_evis_hms";
+$dbname = "db_evis_hmss";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {

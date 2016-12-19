@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2016 at 07:20 PM
--- Server version: 10.1.13-MariaDB
--- PHP Version: 5.6.23
+-- Generation Time: Dec 19, 2016 at 09:22 PM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -89,15 +89,20 @@ CREATE TABLE `tbl_admin` (
   `admin_name` varchar(100) NOT NULL,
   `admin_email` varchar(100) NOT NULL,
   `admin_password` varchar(32) NOT NULL,
-  `admin_status` tinyint(1) NOT NULL
+  `admin_status` tinyint(1) NOT NULL,
+  `type` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_admin`
 --
 
-INSERT INTO `tbl_admin` (`admin_id`, `admin_name`, `admin_email`, `admin_password`, `admin_status`) VALUES
-(1, 'Admin', 'admin@evis.com', '111111', 1);
+INSERT INTO `tbl_admin` (`admin_id`, `admin_name`, `admin_email`, `admin_password`, `admin_status`, `type`) VALUES
+(1, 'Admin', 'admin@evis.com', '111111', 1, 1),
+(2, 'Dr Rizvi', 'rizvi@evis.com', '1234', 1, 2),
+(3, 'sadia afroz', 'sadia@mail.com', '4321', 1, 3),
+(5, 'ABC', 'doc@mail.com', '1234', 1, 2),
+(6, 'receptionist', 'recp@evis.com', '4321', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -166,7 +171,8 @@ CREATE TABLE `tbl_doctor` (
 --
 
 INSERT INTO `tbl_doctor` (`doctor_id`, `doctor_name`, `department_id`, `doctor_address`, `doctor_phone`, `doctor_email`, `doctor_visiting_hour`, `doctor_status`) VALUES
-(1, 'Dr Rizvi', 1, 'Dhaka', '01719020278', 'rizvi@evis.com', '5 PM - 9 PM', 1);
+(1, 'Dr Rizvi', 1, 'Dhaka', '01719020278', 'rizvi@evis.com', '5 PM - 9 PM', 1),
+(2, 'ABC', 5, 'some Address', '34268709', 'doc@mail.com', '5pm - 10pm', 1);
 
 -- --------------------------------------------------------
 
@@ -176,18 +182,21 @@ INSERT INTO `tbl_doctor` (`doctor_id`, `doctor_name`, `department_id`, `doctor_a
 
 CREATE TABLE `tbl_medicine` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL
+  `name` varchar(100) NOT NULL,
+  `store` int(11) NOT NULL DEFAULT '0',
+  `sold` int(11) NOT NULL DEFAULT '0',
+  `price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_medicine`
 --
 
-INSERT INTO `tbl_medicine` (`id`, `name`) VALUES
-(1, 'Allertrol'),
-(2, 'Losectill'),
-(3, 'Ecap'),
-(4, 'Toska');
+INSERT INTO `tbl_medicine` (`id`, `name`, `store`, `sold`, `price`) VALUES
+(1, 'Allertrol', 50, 0, 4),
+(2, 'Losectill', 0, 0, 0),
+(3, 'Ecap', 0, 0, 0),
+(4, 'Toska', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -199,16 +208,18 @@ CREATE TABLE `tbl_medicine_history` (
   `history_id` int(11) NOT NULL,
   `patient_id` int(50) NOT NULL,
   `medicines` varchar(255) NOT NULL,
-  `total_cost` int(50) NOT NULL
+  `total_cost` int(50) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_medicine_history`
 --
 
-INSERT INTO `tbl_medicine_history` (`history_id`, `patient_id`, `medicines`, `total_cost`) VALUES
-(1, 1, '"Allertrol", "Ecap", "Toska"', 100),
-(2, 1, '"Losectill", "Toska"', 50);
+INSERT INTO `tbl_medicine_history` (`history_id`, `patient_id`, `medicines`, `total_cost`, `date`) VALUES
+(4, 1, '"Ecap", "Toska"', 15, '2016-12-17 12:33:14'),
+(6, 2, '"Allertrol"', 77, '2016-12-17 12:33:14'),
+(7, 1, '"Ecap", "Allertrol"', 25, '2016-12-17 14:37:34');
 
 -- --------------------------------------------------------
 
@@ -267,8 +278,7 @@ CREATE TABLE `tbl_pharmacist` (
 --
 
 INSERT INTO `tbl_pharmacist` (`pharmacist_id`, `pharmacist_name`, `pharmacist_address`, `pharmacist_phone`, `pharmacist_email`) VALUES
-(2, 'sadia afroz', 'mirpur-2', '0176377758554564', 'sadia@mail.com'),
-(3, 'asdasd', 'asdasd', 'asdasd', 'asdasd');
+(2, 'sadia afroz', 'mirpur-2', '01763775855', 'sadia@mail.com');
 
 -- --------------------------------------------------------
 
@@ -483,7 +493,7 @@ ALTER TABLE `tbl_accounts`
 -- AUTO_INCREMENT for table `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `admin_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `admin_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `tbl_bed`
 --
@@ -498,17 +508,17 @@ ALTER TABLE `tbl_department`
 -- AUTO_INCREMENT for table `tbl_doctor`
 --
 ALTER TABLE `tbl_doctor`
-  MODIFY `doctor_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `doctor_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `tbl_medicine`
 --
 ALTER TABLE `tbl_medicine`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `tbl_medicine_history`
 --
 ALTER TABLE `tbl_medicine_history`
-  MODIFY `history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `tbl_patient`
 --
@@ -523,7 +533,7 @@ ALTER TABLE `tbl_patient_test`
 -- AUTO_INCREMENT for table `tbl_pharmacist`
 --
 ALTER TABLE `tbl_pharmacist`
-  MODIFY `pharmacist_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pharmacist_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `tbl_prescription`
 --

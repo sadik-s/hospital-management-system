@@ -60,6 +60,12 @@
             <p>Department Manager</p>
         </a>        
     </li>
+    <li class="<?php if (basename($_SERVER['PHP_SELF'])=='manage_medicine.php') echo 'active';?>">
+        <a href="manage_medicine.php">
+            <i class="pe-7s-drawer"></i>
+            <p>Medicine Manager</p>
+        </a>
+    </li>
     <li class="<?php if (basename($_SERVER['PHP_SELF'])=='pharmacist_manager.php') echo 'active';?>">
         <a href="content/pharmacist_manager.php">
             <i class="pe-7s-drawer"></i>

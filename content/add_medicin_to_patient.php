@@ -36,61 +36,61 @@ $admin_name=$_SESSION["admin_name"];
                 </li>
                 <?php if($_SESSION["type"] == 1){ ?>
                 <li>
-                    <a href="manage_bed.php">
+                    <a href="../manage_bed.php">
                         <i class="pe-7s-albums"></i>
                         <p>Bed Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_test.php">
+                    <a href="../manage_test.php">
                         <i class="pe-7s-graph3"></i>
                         <p>Test Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_ward.php">
+                    <a href="../manage_ward.php">
                         <i class="pe-7s-culture"></i>
                         <p>Ward Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_admin.php">
+                    <a href="../manage_admin.php">
                         <i class="pe-7s-user"></i>
                         <p>Admin Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_report.php">
+                    <a href="../manage_report.php">
                         <i class="pe-7s-menu"></i>
                         <p>Report Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_doctor.php">
+                    <a href="../manage_doctor.php">
                         <i class="pe-7s-id"></i>
                         <p>Doctor Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_patient.php">
+                    <a href="../manage_patient.php">
                         <i class="pe-7s-umbrella"></i>
                         <p>Patient Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_department.php">
+                    <a href="../manage_department.php">
                         <i class="pe-7s-drawer"></i>
                         <p>Department Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_pharmacist.php">
+                    <a href="pharmacist_manager.php">
                         <i class="pe-7s-drawer"></i>
                         <p>Pharmacist Manager</p>
                     </a>
                 </li>
                 <li>
-                    <a href="manage_account.php">
+                    <a href="../manage_account.php">
                         <i class="pe-7s-drawer"></i>
                         <p>Account Manager</p>
                     </a>
@@ -98,7 +98,7 @@ $admin_name=$_SESSION["admin_name"];
                 <?php } ?>
                 <?php if($_SESSION["type"] == 3){ ?>
                     <li class="active">
-                        <a href="add_medicin_to_patient.php"> <i class="pe-7s-drawer"></i><p>Sell Medicine to patient</p></a>
+                        <a href="../add_medicin_to_patient.php"> <i class="pe-7s-drawer"></i><p>Sell Medicine to patient</p></a>
                     </li>
                 <?php } ?>
             </ul>
