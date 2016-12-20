@@ -35,66 +35,66 @@ $admin_name=$_SESSION["admin_name"];
                     </a>
                 </li>
                 <?php if($_SESSION["type"] == 1){ ?>
-                <li>
-                    <a href="../manage_bed.php">
-                        <i class="pe-7s-albums"></i>
-                        <p>Bed Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../manage_test.php">
-                        <i class="pe-7s-graph3"></i>
-                        <p>Test Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../manage_ward.php">
-                        <i class="pe-7s-culture"></i>
-                        <p>Ward Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../manage_admin.php">
-                        <i class="pe-7s-user"></i>
-                        <p>Admin Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../manage_report.php">
-                        <i class="pe-7s-menu"></i>
-                        <p>Report Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../manage_doctor.php">
-                        <i class="pe-7s-id"></i>
-                        <p>Doctor Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../manage_patient.php">
-                        <i class="pe-7s-umbrella"></i>
-                        <p>Patient Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../manage_department.php">
-                        <i class="pe-7s-drawer"></i>
-                        <p>Department Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="pharmacist_manager.php">
-                        <i class="pe-7s-drawer"></i>
-                        <p>Pharmacist Manager</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="../manage_account.php">
-                        <i class="pe-7s-drawer"></i>
-                        <p>Account Manager</p>
-                    </a>
-                </li>
+                    <li>
+                        <a href="../manage_bed.php">
+                            <i class="pe-7s-albums"></i>
+                            <p>Bed Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../manage_test.php">
+                            <i class="pe-7s-graph3"></i>
+                            <p>Test Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../manage_ward.php">
+                            <i class="pe-7s-culture"></i>
+                            <p>Ward Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../manage_admin.php">
+                            <i class="pe-7s-user"></i>
+                            <p>Admin Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../manage_report.php">
+                            <i class="pe-7s-menu"></i>
+                            <p>Report Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../manage_doctor.php">
+                            <i class="pe-7s-id"></i>
+                            <p>Doctor Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../manage_patient.php">
+                            <i class="pe-7s-umbrella"></i>
+                            <p>Patient Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../manage_department.php">
+                            <i class="pe-7s-drawer"></i>
+                            <p>Department Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pharmacist_manager.php">
+                            <i class="pe-7s-drawer"></i>
+                            <p>Pharmacist Manager</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../manage_account.php">
+                            <i class="pe-7s-drawer"></i>
+                            <p>Account Manager</p>
+                        </a>
+                    </li>
                 <?php } ?>
                 <?php if($_SESSION["type"] == 3){ ?>
                     <li class="active">
@@ -144,52 +144,52 @@ $admin_name=$_SESSION["admin_name"];
 
         ?>
 
-<div class="col-md-8">
-    <form action="" method="post">
-        <div class="row">
+        <div class="col-md-8">
+            <form action="" method="post">
+                <div class="row">
+                    <table class="table" id="data">
+                        <tr>
+                            <td>Select Patient</td>
+                            <td>:</td>
+                            <td>
+                                <select name="patient_id" id="patient-id" type="text" class="form-control">
+                                    <?php
+                                    while ($row = mysqli_fetch_assoc($patients)) {
+                                        ?>
+                                        <option value="<?php echo $row['patient_id'] ?>"><?php echo '#'.$row['patient_id'] .' '. $row['patient_name']?></option>
+                                        <?php
+                                    }
+                                    ?>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input name="submit" type="submit" style="margin-left: 10px;"  value="Submit"/>
+                    <input type="button" id="addnew" name="addnew" value="Add Medicine" />
+                    <input type="hidden" id="items" name="items" value="1" />
+                </div>
+            </form>
 
-    <table class="table" id="data">
-        <tr>
-            <td>Select Patient</td>
-            <td>:</td>
-            <td>
-                <select name="patient_id" id="patient-id" type="text" class="form-control">
-                    <?php
-                    while ($row = mysqli_fetch_assoc($patients)) {
-                        ?>
-                        <option value="<?php echo $row['patient_id'] ?>"><?php echo '#'.$row['patient_id'] .' '. $row['patient_name']?></option>
-                        <?php
-                    }
-                    ?>
-                </select>
-            </td>
-        </tr>
-    </table>
-            <input name="submit" type="submit" style="margin-left: 10px;"  value="Submit"/>
-            <input type="button" id="addnew" name="addnew" value="Add Medicine" />
-            <input type="hidden" id="items" name="items" value="1" />
+            <!--    <select name="selectinput" id="selectinput">-->
+            <!--        <option value="" id="options"></option>-->
+            <!--    </select>-->
         </div>
-    </form>
 
-<!--    <select name="selectinput" id="selectinput">-->
-<!--        <option value="" id="options"></option>-->
-<!--    </select>-->
+
+    </div>
+
+
+
+    <?php require 'footer.php'; ?>
 </div>
-
-
-    </div>
-
-
-
-        <?php require 'footer.php'; ?>
-    </div>
 </div>
 <?php
 $result_array = array();
 while($row = mysqli_fetch_assoc($Medicines))
 {
 //    $result_array[] = $row;
-    $option .= '<option value = "'.$row['name'].'">'.$row['name'].'</option>';
+    $option .= '<option value = "'.$row['name'].'|'.$row['price'].'|'.$row['store'].'|'.$row['sold'].'">'.$row['name'].'</option>';
+
 }
 ?>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -217,7 +217,7 @@ while($row = mysqli_fetch_assoc($Medicines))
 //                $('#target3').append('<option>'+jArray[i].name+'</option>');
 //                $('#target4').append('<option>'+jArray[i].name+'</option>');
 //            })
-            var strToAdd = '<tr><td>Medicine</td><td>:</td><td><select class="form-control" name="medicine[]" id="target'+currentItem+'" type="text" ><?php echo $option; ?></select></td><td>Cost</td><td>:</td><td><input type="text" class="form-control" name="cost[]" /></td><td>TK</td></tr>';
+            var strToAdd = '<tr><td>Medicine</td><td>:</td><td><select class="form-control" name="medicine[]" id="target'+currentItem+'" type="text" ><?php echo $option; ?></select></td><td>Quantity</td><td>:</td><td><input type="text" class="form-control" name="quantity[]" /></td></tr>';
             $('#data').append(strToAdd);
         });
     });
@@ -225,18 +225,75 @@ while($row = mysqli_fetch_assoc($Medicines))
 
 <?php
 if (isset($_POST['submit'])){
-        $prefix = $allMedicineString = '';
-        foreach ($_POST["medicine"] as $medicin) {
-                $allMedicineString .= $prefix . '"' . $medicin . '"';
-                $prefix = ', ';
-        }
-    $total_cost = 0;
-        foreach ($_POST["cost"] as $cost) {
-            $total_cost += $cost;
+    $prefix = $allMedicineString = '';
+    $selectedMedicines = array();
+    foreach ($_POST["medicine"] as $medicin) {
 
+        $option_explode = explode('|', $medicin);
+
+        $selectedMedicines[] = $option_explode[0];
+
+        $allMedicineString .= $prefix . '"' . $option_explode[0] . '"';
+        $prefix = ', ';
+    }
+
+
+// loop for selecting the prices
+    $price = array();
+    foreach ($_POST["medicine"] as $medicin) {
+        $option_explode = explode('|', $medicin);
+        $price[] =  $option_explode[1];
+    }
+
+
+// loop for selecting the store
+    $store = array();
+    foreach ($_POST["medicine"] as $medicin) {
+        $option_explode = explode('|', $medicin);
+        $store[] =  $option_explode[2];
+    }
+    print_r($store);
+
+// loop for selecting the sold
+    $sold = array();
+    foreach ($_POST["medicine"] as $medicin) {
+        $option_explode = explode('|', $medicin);
+        $sold[] =  $option_explode[3];
+    }
+    print_r($sold);
+
+// loop for selecting the quantity and update the medicine table info
+    $quantity = array();
+    $length = 0;
+    foreach ($_POST["quantity"] as $quantities) {
+        $quantity[] = $quantities;
+        $length++;
+    }
+
+// calculating the total cost of medicine
+    $total_cost = 0;
+    for ($i=0;$i<=$length;$i++) {
+        $total_cost += (($price[$i])*($quantity[$i]));
+    }
+// update the amounts of medicines in medicines table
+    $j=0;
+    foreach ($_POST["medicine"] as $medicin) {
+        $currentMedicine = $selectedMedicines[$j];
+        $currentStore = $store[$j] - $quantity[$j];
+        $currentSold =  $sold[$j] + $quantity[$j];
+
+        $update_query  = "UPDATE tbl_medicine SET store = $currentStore, sold = $currentSold WHERE name = '$currentMedicine';";
+        $update_result = mysqli_query($conn, $update_query);
+        if ($update_result) {
+            echo "updated";
         }
-//    $allMedicines[] = implode("," , $allMedicineArray);
-//    echo $allMedicineArray;
+        else{
+            echo "not updated";
+        }
+        $j++;
+    }
+
+
     $patient_id = $_POST['patient_id'];
     $query  = "INSERT into  tbl_medicine_history (patient_id, medicines, total_cost) VALUES ('$patient_id', '$allMedicineString' , '$total_cost')";
 

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2016 at 05:42 PM
+-- Generation Time: Dec 20, 2016 at 08:46 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.5.38
 
@@ -193,10 +193,10 @@ CREATE TABLE `tbl_medicine` (
 --
 
 INSERT INTO `tbl_medicine` (`id`, `name`, `store`, `sold`, `price`) VALUES
-(1, 'Allertrol', 50, 0, 4),
-(2, 'Losectill', 0, 0, 0),
-(3, 'Ecap', 0, 0, 0),
-(4, 'Toska', 0, 0, 0);
+(1, 'Allertrol', 47, 3, 4),
+(2, 'Losectill', 20, 0, 5),
+(3, 'Ecap', 50, 4, 4),
+(4, 'Toska', 70, 0, 10);
 
 -- --------------------------------------------------------
 
@@ -219,7 +219,8 @@ CREATE TABLE `tbl_medicine_history` (
 INSERT INTO `tbl_medicine_history` (`history_id`, `patient_id`, `medicines`, `total_cost`, `date`) VALUES
 (4, 1, '"Ecap", "Toska"', 15, '2016-12-17 12:33:14'),
 (6, 2, '"Allertrol"', 77, '2016-12-17 12:33:14'),
-(7, 1, '"Ecap", "Allertrol"', 25, '2016-12-17 14:37:34');
+(7, 1, '"Ecap", "Allertrol"', 25, '2016-12-17 14:37:34'),
+(8, 5, '"Allertrol", "Ecap"', 12, '2016-12-20 19:42:54');
 
 -- --------------------------------------------------------
 
@@ -245,8 +246,8 @@ CREATE TABLE `tbl_patient` (
 --
 
 INSERT INTO `tbl_patient` (`patient_id`, `ward_id`, `bed_id`, `doc_id`, `patient_name`, `patient_address`, `patient_phone`, `patient_nid`, `admission_date`, `release_date`) VALUES
-(1, 1, 4, 0, 'Jebin', 'Rupnagar, Mirpur 2, Dhaka-1216', '01780808575', '1234342432432762', '2016-03-31', '2016-05-01'),
-(2, 4, 2, 0, 'Md Khairul Bashar', 'Khulna', '01719020278', '3243526862896436', '2016-04-04', '2016-05-16'),
+(1, 1, 4, 1, 'Jebin', 'Rupnagar, Mirpur 2, Dhaka-1216', '01780808575', '1234342432432762', '2016-03-31', '2016-05-01'),
+(2, 4, 2, 1, 'Md Khairul Bashar', 'Khulna', '01719020278', '3243526862896436', '2016-04-04', '2016-05-16'),
 (5, 1, 2, 2, 'sadik', '', '4564564', '87764346', '2016-12-19', '2016-12-22');
 
 -- --------------------------------------------------------
@@ -301,7 +302,7 @@ CREATE TABLE `tbl_prescription` (
 --
 
 INSERT INTO `tbl_prescription` (`prescription_id`, `doctor_id`, `patient_id`, `prescription`, `prescription_time`) VALUES
-(2, 2, 5, 'jhjsa sdafhj', '2016-12-20 02:56:13');
+(2, 1, 2, 'jhjsa sdafhj', '2016-12-20 02:56:13');
 
 -- --------------------------------------------------------
 
@@ -520,7 +521,7 @@ ALTER TABLE `tbl_medicine`
 -- AUTO_INCREMENT for table `tbl_medicine_history`
 --
 ALTER TABLE `tbl_medicine_history`
-  MODIFY `history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `tbl_patient`
 --

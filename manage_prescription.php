@@ -1,13 +1,20 @@
 <?php
     session_start();
     $admin_name=$_SESSION["admin_name"];
-
+    $id = $_SESSION["id"];
+    $type = $_SESSION["type"];
     if ($admin_name == NULL)
     {
         header("location: http://localhost/hospital_management_system/login.php");
     }
     require 'function/db_connect.php';
-    $sql = "SELECT * FROM tbl_prescription AS p, tbl_patient AS t, tbl_doctor AS d WHERE p.patient_id=t.patient_id AND p.doctor_id=d.doctor_id";
+
+    if($type==2){
+        $sql = "SELECT * FROM tbl_prescription AS p, tbl_patient AS t, tbl_doctor AS d WHERE p.patient_id=t.patient_id AND p.doctor_id=d.doctor_id AND p.doctor_id='$id'";
+    }else{
+        $sql = "SELECT * FROM tbl_prescription AS p, tbl_patient AS t, tbl_doctor AS d WHERE p.patient_id=t.patient_id AND p.doctor_id=d.doctor_id";
+    }
+
     $result = mysqli_query($conn, $sql);
 
 ?>

@@ -1,6 +1,8 @@
 <?php
     session_start();
     $admin_name=$_SESSION["admin_name"];
+    $type=$_SESSION["type"];
+    $id=$_SESSION["id"];
 
     if ($admin_name == NULL)
     {
@@ -13,6 +15,9 @@
     $all_prescription = mysqli_fetch_assoc($result);
     
     $patient = "SELECT * FROM tbl_patient";
+    if($type==2) {
+        $patient = "SELECT * FROM tbl_patient WHERE doc_id = '$id'";
+    }
     $all_patient = mysqli_query($conn, $patient);
 
     $doctor = "SELECT * FROM tbl_doctor";

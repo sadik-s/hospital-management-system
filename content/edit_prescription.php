@@ -32,6 +32,11 @@
                             ?>
                             <div class="row">
                                 <div class="col-md-8">
+                                    <?php if($type == 2){?>
+                                        <label>Doctor</label>
+                                        <input type="text" name="doctor" class="form-control" value="<?php echo $admin_name; ?>" disabled>
+                                        <input type="hidden" name="doctor_id" value="<?php echo $id; ?>">
+                                    <?php } else{?>
                                     <div class="form-group">
                                         <label>Select Doctor</label>
                                         <select name="doctor_id" class="form-control">
@@ -41,7 +46,8 @@
                                                 <option value="<?php echo $doctor['doctor_id'] ?>"><?php echo $doctor['doctor_name'] ?></option>
                                             <?php } ?>
                                         </select>
-                                    </div>        
+                                    </div>
+                                    <?php } ?>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
