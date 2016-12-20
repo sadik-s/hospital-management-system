@@ -9,7 +9,8 @@
     require 'function/db_connect.php';
     $sql = "SELECT * FROM tbl_prescription AS p, tbl_patient AS t, tbl_doctor AS d WHERE p.patient_id=t.patient_id AND p.doctor_id=d.doctor_id";
     $result = mysqli_query($conn, $sql);
-?> 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

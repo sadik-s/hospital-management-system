@@ -7,7 +7,12 @@
         header("location: http://localhost/hospital_management_system/login.php");
     }
     require 'function/db_connect.php';
-    $sql = "SELECT * FROM tbl_patient";
+    $type = $_SESSION["type"];
+    $id = $_SESSION["id"];
+    if($type==2)
+    $sql = "SELECT * FROM tbl_patient WHERE doc_id = '$id'";
+    else
+        $sql = "SELECT * FROM tbl_patient";
     $result = mysqli_query($conn, $sql);
 ?> 
 <!DOCTYPE html>

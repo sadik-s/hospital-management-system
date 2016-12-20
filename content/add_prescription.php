@@ -3,6 +3,11 @@ $doctor = "SELECT * FROM tbl_doctor";
 $all_doctor = mysqli_query($conn, $doctor);
 
 $patient = "SELECT * FROM tbl_patient";
+$type = $_SESSION["type"];
+$id = $_SESSION["id"];
+if($type==2) {
+    $patient = "SELECT * FROM tbl_patient WHERE doc_id = '$id'";
+}
 $all_patient = mysqli_query($conn, $patient);
 ?>
 <div class="content">
@@ -31,6 +36,11 @@ $all_patient = mysqli_query($conn, $patient);
                             ?>
                             <div class="row">
                                 <div class="col-md-8">
+                                    <?php if($type == 2){?>
+                                        <label>Doctor</label>
+                                        <input type="text" name="doctor" class="form-control" value="<?php echo $admin_name; ?>" disabled>
+                                        <input type="hidden" name="doctor_id" value="<?php echo $id; ?>">
+                                    <?php } else{?>
                                     <div class="form-group">
                                         <label>Select Doctor</label>
                                         <select name="doctor_id" class="form-control">
@@ -40,7 +50,8 @@ $all_patient = mysqli_query($conn, $patient);
                                                 <option value="<?php echo $row['doctor_id'] ?>"><?php echo $row['doctor_name'] ?></option>
                                             <?php } ?>
                                         </select>
-                                    </div>        
+                                    </div>
+                                    <?php } ?>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">

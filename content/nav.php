@@ -87,6 +87,12 @@
                 <p>Patient Manager</p>
             </a>
         </li>
+        <li class="<?php if (basename($_SERVER['PHP_SELF'])=='manage_prescription.php') echo 'active';?>">
+            <a href="manage_prescription.php">
+                <i class="pe-7s-umbrella"></i>
+                <p>Prescription Manage</p>
+            </a>
+        </li>
         <li class="<?php if (basename($_SERVER['PHP_SELF'])=='change_password.php') echo 'active';?>">
             <a href="change_password.php?id=<?php echo $_SESSION["id"] ?>">
                 <i class="pe-7s-drawer"></i>

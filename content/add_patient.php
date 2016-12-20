@@ -41,11 +41,23 @@
                                         <select name="bed_id" class="form-control">
                                             <?php
                                             while ($row = mysqli_fetch_assoc($all_bed)) {
-                                                ?> 
+                                                ?>
                                                 <option value="<?php echo $row['bed_id'] ?>"><?php echo $row['bed_name'] ?></option>
                                             <?php } ?>
                                         </select>
-                                    </div>        
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label>Select Doctor</label>
+                                        <select name="doc_id" class="form-control">
+                                            <?php
+                                            while ($row = mysqli_fetch_assoc($all_doctor)) {
+                                                ?>
+                                                <option value="<?php echo $row['admin_id'] ?>"><?php echo $row['admin_name'] ?></option>
+                                            <?php } ?>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">

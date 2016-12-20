@@ -14,16 +14,20 @@
     $bed = "SELECT * FROM tbl_bed";
     $all_bed = mysqli_query($conn, $bed);
 
+$bed = "SELECT * FROM tbl_admin WHERE type=2";
+    $all_doctor = mysqli_query($conn, $bed);
+
     $ward_id=filter_input(INPUT_POST, 'ward_id');
     $bed_id=filter_input(INPUT_POST, 'bed_id');
+    $doc_id=filter_input(INPUT_POST, 'doc_id');
     $patient_name=filter_input(INPUT_POST, 'patient_name');
     $patient_address=filter_input(INPUT_POST, 'patient_address');
     $patient_phone=filter_input(INPUT_POST, 'patient_phone');
     $patient_nid=filter_input(INPUT_POST, 'patient_nid');
     $admission_date=filter_input(INPUT_POST, 'admission_date');
 
-    $sql = "INSERT INTO tbl_patient (ward_id,bed_id,patient_name,patient_address,patient_phone,patient_nid,admission_date)
-        VALUES ('$ward_id','$bed_id','$patient_name','$patient_address','$patient_phone','$patient_nid','$admission_date')";
+    $sql = "INSERT INTO tbl_patient (ward_id,bed_id,doc_id,patient_name,patient_address,patient_phone,patient_nid,admission_date)
+        VALUES ('$ward_id','$bed_id','$doc_id','$patient_name','$patient_address','$patient_phone','$patient_nid','$admission_date')";
 ?> 
 <!DOCTYPE html>
 <html lang="en">
