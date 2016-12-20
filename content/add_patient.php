@@ -54,7 +54,7 @@
                                             <?php
                                             while ($row = mysqli_fetch_assoc($all_doctor)) {
                                                 ?>
-                                                <option value="<?php echo $row['admin_id'] ?>"><?php echo $row['admin_name'] ?></option>
+                                                <option value="<?php echo $row['doctor_id'] ?>"><?php echo $row['doctor_name'] ?></option>
                                             <?php } ?>
                                         </select>
                                     </div>

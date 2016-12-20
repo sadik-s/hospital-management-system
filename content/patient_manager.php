@@ -19,7 +19,9 @@
                 <div class="card">
                     <ol class="breadcrumb">
                         <li><a href="index.php"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li><a href="add_patient.php"><i class="fa fa-globe"></i> Add Patient</a></li>
+                        <?php if($type !=2){ ?>
+                            <li><a href="add_patient.php"><i class="fa fa-globe"></i> Add Patient</a></li>
+                        <?php }?>
                         <li class="active">Patient Manager</li>
                     </ol>
                     <div class="header">

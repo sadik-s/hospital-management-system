@@ -14,7 +14,7 @@
     $bed = "SELECT * FROM tbl_bed";
     $all_bed = mysqli_query($conn, $bed);
 
-$bed = "SELECT * FROM tbl_admin WHERE type=2";
+$bed = "SELECT * FROM tbl_doctor";
     $all_doctor = mysqli_query($conn, $bed);
 
     $ward_id=filter_input(INPUT_POST, 'ward_id');
