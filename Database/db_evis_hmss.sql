@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 19, 2016 at 09:22 PM
+-- Generation Time: Dec 20, 2016 at 05:42 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.5.38
 
@@ -231,6 +231,7 @@ CREATE TABLE `tbl_patient` (
   `patient_id` int(6) NOT NULL,
   `ward_id` int(2) NOT NULL,
   `bed_id` int(2) NOT NULL,
+  `doc_id` int(11) NOT NULL,
   `patient_name` varchar(100) NOT NULL,
   `patient_address` text NOT NULL,
   `patient_phone` varchar(20) NOT NULL,
@@ -243,9 +244,10 @@ CREATE TABLE `tbl_patient` (
 -- Dumping data for table `tbl_patient`
 --
 
-INSERT INTO `tbl_patient` (`patient_id`, `ward_id`, `bed_id`, `patient_name`, `patient_address`, `patient_phone`, `patient_nid`, `admission_date`, `release_date`) VALUES
-(1, 1, 4, 'Jebin', 'Rupnagar, Mirpur 2, Dhaka-1216', '01780808575', '1234342432432762', '2016-03-31', '2016-05-01'),
-(2, 4, 2, 'Md Khairul Bashar', 'Khulna', '01719020278', '3243526862896436', '2016-04-04', '2016-05-16');
+INSERT INTO `tbl_patient` (`patient_id`, `ward_id`, `bed_id`, `doc_id`, `patient_name`, `patient_address`, `patient_phone`, `patient_nid`, `admission_date`, `release_date`) VALUES
+(1, 1, 4, 0, 'Jebin', 'Rupnagar, Mirpur 2, Dhaka-1216', '01780808575', '1234342432432762', '2016-03-31', '2016-05-01'),
+(2, 4, 2, 0, 'Md Khairul Bashar', 'Khulna', '01719020278', '3243526862896436', '2016-04-04', '2016-05-16'),
+(5, 1, 2, 2, 'sadik', '', '4564564', '87764346', '2016-12-19', '2016-12-22');
 
 -- --------------------------------------------------------
 
@@ -299,7 +301,7 @@ CREATE TABLE `tbl_prescription` (
 --
 
 INSERT INTO `tbl_prescription` (`prescription_id`, `doctor_id`, `patient_id`, `prescription`, `prescription_time`) VALUES
-(1, 1, 2, 'Paracetamol', '2016-03-31 05:41:44');
+(2, 2, 5, 'jhjsa sdafhj', '2016-12-20 02:56:13');
 
 -- --------------------------------------------------------
 
@@ -513,7 +515,7 @@ ALTER TABLE `tbl_doctor`
 -- AUTO_INCREMENT for table `tbl_medicine`
 --
 ALTER TABLE `tbl_medicine`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tbl_medicine_history`
 --
@@ -523,7 +525,7 @@ ALTER TABLE `tbl_medicine_history`
 -- AUTO_INCREMENT for table `tbl_patient`
 --
 ALTER TABLE `tbl_patient`
-  MODIFY `patient_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `patient_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `tbl_patient_test`
 --
@@ -538,7 +540,7 @@ ALTER TABLE `tbl_pharmacist`
 -- AUTO_INCREMENT for table `tbl_prescription`
 --
 ALTER TABLE `tbl_prescription`
-  MODIFY `prescription_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `prescription_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `tbl_report`
 --

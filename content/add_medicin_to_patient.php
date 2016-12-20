@@ -229,7 +229,7 @@ if (isset($_POST['submit'])){
         foreach ($_POST["medicine"] as $medicin) {
                 $allMedicineString .= $prefix . '"' . $medicin . '"';
                 $prefix = ', ';
-            }
+        }
     $total_cost = 0;
         foreach ($_POST["cost"] as $cost) {
             $total_cost += $cost;

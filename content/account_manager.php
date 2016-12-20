@@ -57,7 +57,7 @@ $result = mysqli_query($conn, $sql);
                             <form action="" method="post">
                                 <div class="form-group col-md-4 col-md-offset-4" style="">
                                     <label for="patient_id" style="font-weight: bold; font-size: 15px; text-transform: none;">Patient</label>
-                                    <select name="patient_id" id="patient_id" class="form-control">
+                                    <select name="patient_id" id="combobox" class="form-control">
                                         <?php
                                             while ($row = mysqli_fetch_assoc($result)) {
                                         ?>
