@@ -20,10 +20,10 @@
                     <ol class="breadcrumb">
                         <li><a href="index.php"><i class="fa fa-dashboard"></i> Home</a></li>
                         <li><a href="add_admin.php"><i class="fa fa-globe"></i> Add Admin</a></li>
-                        <li class="active">Admin Manager</li>
+                        <li class="active">User Manager</li>
                     </ol>
                     <div class="header">
-                        <h4 class="title">Admin Manager</h4>
+                        <h4 class="title">User Manager</h4>
                         <p class="category">Here is you can manage your Administrators</p>
                     </div>
                     <div class="content table-responsive table-full-width">

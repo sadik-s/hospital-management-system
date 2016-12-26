@@ -12,8 +12,8 @@
     $admin_password = filter_input(INPUT_POST, 'admin_password');
     $admin_status = filter_input(INPUT_POST, 'admin_status');
 
-    $sql = "INSERT INTO tbl_admin (admin_name,admin_email,admin_password,admin_status)
-        VALUES ('$admin_name','$admin_email','$admin_password','$admin_status')";
+    $sql = "INSERT INTO tbl_admin (admin_name,admin_email,admin_password,admin_status,type)
+        VALUES ('$admin_name','$admin_email','$admin_password','$admin_status',1)";
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,5 +51,9 @@
         </div>
     </body>
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+        $('#Form').validate();
+    </script>
 </html>

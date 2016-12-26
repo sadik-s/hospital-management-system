@@ -12,7 +12,7 @@
                         <h4 class="title">Add Bed</h4>
                     </div>
                     <div class="content">
-                        <form action="" method="POST">
+                        <form action="" method="POST" id="Form">
                             <?php
                                 if (!empty($bed_name)) {
                                     if (mysqli_query($conn, $sql)) {
@@ -25,8 +25,8 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Bed Name</label>
-                                        <input type="text" name="bed_name" class="form-control">
+                                        <label>*Bed Name</label>
+                                        <input type="text" name="bed_name" class="form-control" required>
                                     </div>        
                                 </div>
                             </div>

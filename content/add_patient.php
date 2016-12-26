@@ -12,7 +12,7 @@
                         <h4 class="title">Add Patient</h4>
                     </div>
                     <div class="content">
-                        <form action="" method="POST">
+                        <form action="" method="POST" id="Form">
                             <?php
                                 if (!empty($patient_name)) {
                                     if (mysqli_query($conn, $sql)) {
@@ -25,7 +25,7 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Select Ward</label>
+                                        <label>*Select Ward</label>
                                         <select name="ward_id" class="form-control">
                                             <?php
                                             while ($row = mysqli_fetch_assoc($all_ward)) {
@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Select Bed</label>
+                                        <label>*Select Bed</label>
                                         <select name="bed_id" class="form-control">
                                             <?php
                                             while ($row = mysqli_fetch_assoc($all_bed)) {
@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Select Doctor</label>
+                                        <label>*Select Doctor</label>
                                         <select name="doc_id" class="form-control">
                                             <?php
                                             while ($row = mysqli_fetch_assoc($all_doctor)) {
@@ -61,8 +61,8 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Patient Name</label>
-                                        <input type="text" name="patient_name" class="form-control" placeholder="Enter Patient Name" >
+                                        <label>*Patient Name</label>
+                                        <input type="text" name="patient_name" class="form-control" placeholder="Enter Patient Name" required>
                                     </div>        
                                 </div>
                                 <div class="col-md-8">
@@ -73,8 +73,8 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Phone</label>
-                                        <input type="text" name="patient_phone" class="form-control">
+                                        <label>*Phone</label>
+                                        <input type="text" name="patient_phone" class="form-control" required>
                                     </div>        
                                 </div>
                                 <div class="col-md-8">
@@ -85,8 +85,8 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Admission Date</label>
-                                        <input type="date" name="admission_date" class="form-control">
+                                        <label>*Admission Date</label>
+                                        <input type="text" id="date" name="admission_date" class="form-control" required>
                                     </div>        
                                 </div>
                             </div>

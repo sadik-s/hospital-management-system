@@ -12,7 +12,7 @@
                         <h4 class="title">Add Receptionist</h4>
                     </div>
                     <div class="content">
-                        <form action="" method="POST">
+                        <form action="" method="POST" id="Form">
                             <?php
                             if (!empty($receptionist_name)) {
                                 if (mysqli_query($conn, $sql)) {
@@ -25,20 +25,20 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Receptionist Name</label>
-                                        <input type="text" name="receptionist_name" class="form-control" placeholder="Enter Receptionist Name" >
+                                        <label>*Receptionist Name</label>
+                                        <input type="text" name="receptionist_name" class="form-control" placeholder="Enter Receptionist Name" required>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Email</label>
-                                        <input type="text" name="receptionist_email" class="form-control">
+                                        <label>*Email</label>
+                                        <input type="email" name="receptionist_email" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="text" name="receptionist_password" class="form-control">
+                                        <label>*Password</label>
+                                        <input type="password" name="receptionist_password" minlength="4" class="form-control" required>
                                     </div>
                                 </div>
                             </div>

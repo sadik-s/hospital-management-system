@@ -25,6 +25,9 @@ $bed = "SELECT * FROM tbl_doctor";
     $patient_phone=filter_input(INPUT_POST, 'patient_phone');
     $patient_nid=filter_input(INPUT_POST, 'patient_nid');
     $admission_date=filter_input(INPUT_POST, 'admission_date');
+    $date = new DateTime($admission_date);
+    $admission_date = $date->format('Y-m-d');
+
 
     $sql = "INSERT INTO tbl_patient (ward_id,bed_id,doc_id,patient_name,patient_address,patient_phone,patient_nid,admission_date)
         VALUES ('$ward_id','$bed_id','$doc_id','$patient_name','$patient_address','$patient_phone','$patient_nid','$admission_date')";
@@ -38,6 +41,7 @@ $bed = "SELECT * FROM tbl_doctor";
         <title>HMS Dashboard</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
+        <link href="assets/css/jquery-ui.css" rel="stylesheet" />
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
         <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -65,5 +69,13 @@ $bed = "SELECT * FROM tbl_doctor";
         </div>
     </body>
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui.js" type="text/javascript"></script>
+    <script>
+        $('#Form').validate();
+        $(document).ready(function () {
+            $('#date').datepicker({dateFormat:"mm/dd/yy"}).datepicker("setDate",new Date());
+        });
+    </script>
 </html>

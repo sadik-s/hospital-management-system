@@ -46,8 +46,8 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
         <div class="row">
             <div class="col-md-12">
 
-                <h3>Welcome To Evis Hospital Management System</h3>
-				
+                <h2 class="text-center">Welcome To Evis Hospital Management System</h2>
+				<br><br>
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
@@ -100,8 +100,8 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
 				</div>
                 
 
-                <h3>Welcome To Hospital Management System</h3>
-				<img src="assets/img/b.jpg"  style="width:304px;height:228px;">
+                <!--<h3>Welcome To Hospital Management System</h3>
+				<img src="assets/img/b.jpg"  style="width:304px;height:228px;">-->
 
             </div>                  
         </div>      

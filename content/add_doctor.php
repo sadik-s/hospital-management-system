@@ -12,7 +12,7 @@
                         <h4 class="title">Add Doctor</h4>
                     </div>
                     <div class="content">
-                        <form action="" method="POST">
+                        <form action="" method="POST" id="Form">
                             <?php
                                 if (!empty($doctor_name)) {
                                     if (mysqli_query($conn, $sql_insert)) {
@@ -27,13 +27,13 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Doctor Name</label>
-                                        <input type="text" name="doctor_name" class="form-control">
+                                        <label>*Doctor Name</label>
+                                        <input type="text" name="doctor_name" class="form-control" required>
                                     </div>        
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Doctor Department</label>
+                                        <label>*Doctor Department</label>
                                         <select name="department_id" class="form-control">
                                             <?php
                                             while ($row = mysqli_fetch_assoc($result)) {
@@ -51,31 +51,31 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Doctor Phone</label>
-                                        <input type="text" name="doctor_phone" class="form-control">
+                                        <label>*Doctor Phone</label>
+                                        <input type="text" name="doctor_phone"  class="form-control" required>
                                     </div>        
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Doctor Email</label>
-                                        <input type="text" name="doctor_email" class="form-control">
+                                        <label>*Doctor Email</label>
+                                        <input type="email" name="doctor_email" class="form-control" required>
                                     </div>        
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label>Doctor Visiting Hour</label>
-                                        <input type="text" name="doctor_visiting_hour" class="form-control">
+                                        <input type="text" name="doctor_visiting_hour" class="form-control" >
                                     </div>        
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Doctor Password</label>
-                                        <input type="text" name="doctor_password" class="form-control">
+                                        <label>*Doctor Password</label>
+                                        <input type="password" name="doctor_password" minlength="4" class="form-control" required>
                                     </div>        
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label>Doctor Status</label>
+                                        <label>*Doctor Status</label>
                                         <select name="doctor_status" class="form-control">
                                             <option value="1">Active</option>
                                             <option value="0">Inactive</option>
