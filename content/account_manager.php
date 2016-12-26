@@ -61,7 +61,7 @@ $result = mysqli_query($conn, $sql);
                                         <?php
                                             while ($row = mysqli_fetch_assoc($result)) {
                                         ?>
-                                            <option value="<?php echo $row['patient_id'] ?>" <?php if(isset($patientDetails)&&$patientDetails){if($patientDetails['patient_id']==$row['patient_id']) echo 'selected'; } ?>><?php echo $row['patient_name'] ?></option>
+                                            <option value="<?php echo $row['patient_id'] ?>" <?php if(isset($patientDetails)&&$patientDetails){if($patientDetails['patient_id']==$row['patient_id']) echo 'selected'; } ?>><?php echo $row['patient_phone'].'('. $row['patient_name'].')';?></option>
                                         <?php } ?>
                                     </select>
                                     <div class="form-group" style="margin-top: 20px;">

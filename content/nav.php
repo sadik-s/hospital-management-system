@@ -27,7 +27,7 @@
     <li class="<?php if (basename($_SERVER['PHP_SELF'])=='manage_admin.php' || basename($_SERVER['PHP_SELF'])=='add_admin.php'|| basename($_SERVER['PHP_SELF'])=='edit_admin.php') echo 'active';?>">
         <a href="manage_admin.php">
             <i class="pe-7s-user"></i> 
-            <p>Admin Manager</p>
+            <p>User Manager</p>
         </a>
     </li>
     <li class="<?php if (basename($_SERVER['PHP_SELF'])=='manage_report.php'|| basename($_SERVER['PHP_SELF'])=='add_report.php'|| basename($_SERVER['PHP_SELF'])=='edit_repord.php') echo 'active';?>">

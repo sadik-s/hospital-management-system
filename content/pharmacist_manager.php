@@ -64,13 +64,19 @@ $result = mysqli_query($conn, $sql);
                 <li>
                     <a href="../manage_admin.php">
                         <i class="pe-7s-user"></i>
-                        <p>Admin Manager</p>
+                        <p>User Manager</p>
                     </a>
                 </li>
                 <li>
                     <a href="../manage_report.php">
                         <i class="pe-7s-menu"></i>
                         <p>Report Manager</p>
+                    </a>
+                </li>
+                <li class="<?php if (basename($_SERVER['PHP_SELF'])=='manage_receptionist.php'|| basename($_SERVER['PHP_SELF'])=='add_receptionist.php'|| basename($_SERVER['PHP_SELF'])=='edit_receptionist.php') echo 'active';?>">
+                    <a href="../manage_receptionist.php">
+                        <i class="pe-7s-menu"></i>
+                        <p>Receptionist Manager</p>
                     </a>
                 </li>
                 <li>
@@ -89,6 +95,12 @@ $result = mysqli_query($conn, $sql);
                     <a href="../manage_department.php">
                         <i class="pe-7s-drawer"></i>
                         <p>Department Manager</p>
+                    </a>
+                </li>
+                <li class="<?php if (basename($_SERVER['PHP_SELF'])=='manage_medicine.php') echo 'active';?>">
+                    <a href="../manage_medicine.php">
+                        <i class="pe-7s-drawer"></i>
+                        <p>Medicine Manager</p>
                     </a>
                 </li>
                 <li class="<?php if (basename($_SERVER['PHP_SELF'])=='pharmacist_manager.php') echo 'active';?>">
