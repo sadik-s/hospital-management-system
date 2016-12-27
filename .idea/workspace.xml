@@ -2,11 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7635442b-ca80-48fe-8ea2-077208b0106e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/patient_manager.php" afterPath="$PROJECT_DIR$/content/patient_manager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/report_manager.php" afterPath="$PROJECT_DIR$/content/report_manager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_account.php" afterPath="$PROJECT_DIR$/add_account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_admin.php" afterPath="$PROJECT_DIR$/add_admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_bed.php" afterPath="$PROJECT_DIR$/add_bed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_department.php" afterPath="$PROJECT_DIR$/add_department.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_doctor.php" afterPath="$PROJECT_DIR$/add_doctor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_medicine.php" afterPath="$PROJECT_DIR$/add_medicine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_new_account_access.php" afterPath="$PROJECT_DIR$/add_new_account_access.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_patient.php" afterPath="$PROJECT_DIR$/add_patient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_prescription.php" afterPath="$PROJECT_DIR$/add_prescription.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_receptionist.php" afterPath="$PROJECT_DIR$/add_receptionist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_report.php" afterPath="$PROJECT_DIR$/add_report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_test.php" afterPath="$PROJECT_DIR$/add_test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_ward.php" afterPath="$PROJECT_DIR$/add_ward.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/change_password.php" afterPath="$PROJECT_DIR$/change_password.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/add_medicin_to_patient.php" afterPath="$PROJECT_DIR$/content/add_medicin_to_patient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/add_pharmacist.php" afterPath="$PROJECT_DIR$/content/add_pharmacist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/dashboard.php" afterPath="$PROJECT_DIR$/content/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/edit_pharmacist.php" afterPath="$PROJECT_DIR$/content/edit_pharmacist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/pharmacist_manager.php" afterPath="$PROJECT_DIR$/content/pharmacist_manager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_account.php" afterPath="$PROJECT_DIR$/edit_account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_admin.php" afterPath="$PROJECT_DIR$/edit_admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_bed.php" afterPath="$PROJECT_DIR$/edit_bed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_department.php" afterPath="$PROJECT_DIR$/edit_department.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_doctor.php" afterPath="$PROJECT_DIR$/edit_doctor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_medicine.php" afterPath="$PROJECT_DIR$/edit_medicine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_patient.php" afterPath="$PROJECT_DIR$/edit_patient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_prescription.php" afterPath="$PROJECT_DIR$/edit_prescription.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_receptionist.php" afterPath="$PROJECT_DIR$/edit_receptionist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_report.php" afterPath="$PROJECT_DIR$/edit_report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_test.php" afterPath="$PROJECT_DIR$/edit_test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_ward.php" afterPath="$PROJECT_DIR$/edit_ward.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_account.php" afterPath="$PROJECT_DIR$/manage_account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_admin.php" afterPath="$PROJECT_DIR$/manage_admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_bed.php" afterPath="$PROJECT_DIR$/manage_bed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_department.php" afterPath="$PROJECT_DIR$/manage_department.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_doctor.php" afterPath="$PROJECT_DIR$/manage_doctor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_medicine.php" afterPath="$PROJECT_DIR$/manage_medicine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_patient.php" afterPath="$PROJECT_DIR$/manage_patient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_pharmacist.php" afterPath="$PROJECT_DIR$/manage_pharmacist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_prescription.php" afterPath="$PROJECT_DIR$/manage_prescription.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_receptionist.php" afterPath="$PROJECT_DIR$/manage_receptionist.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_report.php" afterPath="$PROJECT_DIR$/manage_report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_test.php" afterPath="$PROJECT_DIR$/manage_test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage_ward.php" afterPath="$PROJECT_DIR$/manage_ward.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manual.php" afterPath="$PROJECT_DIR$/manual.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sell_medicine.php" afterPath="$PROJECT_DIR$/sell_medicine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view_prescription.php" afterPath="$PROJECT_DIR$/view_prescription.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view_report.php" afterPath="$PROJECT_DIR$/view_report.php" />
     </list>
     <ignored path="hospital_management_system.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,52 +72,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manage_patient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage_patient.php">
+      <file leaf-file-name="add_medicin_to_patient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/add_medicin_to_patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="182">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="24" />
               <folding>
-                <marker date="1482857987197" expanded="true" signature="324:370" placeholder="SELECT * FRO... tbl_patient" />
-                <marker date="1482857987197" expanded="true" signature="413:475" placeholder="SELECT * FRO... tbl_patient" />
-                <marker date="1482857987197" expanded="true" signature="523:548" placeholder="SELECT * FRO... tbl_patient" />
-                <marker date="1482857987197" expanded="true" signature="591:634" placeholder="SELECT * FRO... tbl_patient" />
-                <marker date="1482857987197" expanded="true" signature="656:696" placeholder="SELECT * FRO... tbl_patient" />
-                <marker date="1482857987197" expanded="true" signature="744:767" placeholder="..." />
+                <marker date="1482861192580" expanded="true" signature="5732:5757" placeholder="SELECT * FRO... tbl_patient" />
+                <marker date="1482861192580" expanded="true" signature="5785:5811" placeholder="SELECT * FRO... tbl_medicine" />
+                <marker date="1482861192580" expanded="true" signature="10704:10802" placeholder="UPDATE tbl_m... " />
+                <marker date="1482861192580" expanded="true" signature="11068:11198" placeholder="INSERT into tbl_medicine_history" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_report.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage_report.php">
+      <file leaf-file-name="add_account.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add_account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="46" column="53" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="53" />
+            <state relative-caret-position="332">
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
               <folding>
-                <marker date="1482858608276" expanded="true" signature="275:393" placeholder="SELECT * FRO... tbl_report" />
-                <marker date="1482858608276" expanded="true" signature="432:568" placeholder="SELECT * FRO... tbl_patient" />
+                <marker date="1482861239690" expanded="true" signature="246:268" placeholder="SELECT * FRO... tbl_ward" />
+                <marker date="1482861239690" expanded="true" signature="328:349" placeholder="SELECT * FRO... tbl_bed" />
+                <marker date="1482861239690" expanded="true" signature="800:1013" placeholder="INSERT INTO account... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report_manager.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/report_manager.php">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="patient_manager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/patient_manager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
-              <folding />
+            <state relative-caret-position="327">
+              <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#h3#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#h3#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1482862232811" expanded="true" signature="255:289" placeholder="SELECT patie... tbl_patient" />
+                <marker date="1482862232811" expanded="true" signature="389:407" placeholder="SELECT id FR... customer_details" />
+                <marker date="1482862232811" expanded="true" signature="389:425" placeholder="SELECT * FRO... tbl_admin" />
+                <marker date="1482862232811" expanded="true" signature="525:548" placeholder="SELECT * FRO... tbl_admin" />
+                <marker date="1482862232811" expanded="true" signature="641:665" placeholder="SELECT * FRO... tbl_report" />
+                <marker date="1482862232811" expanded="true" signature="761:789" placeholder="SELECT id FR... supplier_details" />
+                <marker date="1482862232811" expanded="true" signature="890:916" placeholder="SELECT bed_i... tbl_bed" />
+                <marker date="1482862232811" expanded="true" signature="1012:1052" placeholder="SELECT depar... tbl_department" />
+                <marker date="1482862232811" expanded="true" signature="1155:1187" placeholder="SELECT docto... tbl_doctor" />
+                <marker date="1482862232811" expanded="true" signature="1285:1313" placeholder="SELECT ward_... tbl_ward" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,22 +134,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/content/test_manager.php" />
-        <option value="$PROJECT_DIR$/content/department_manager.php" />
-        <option value="$PROJECT_DIR$/content/prescription_manager.php" />
-        <option value="$PROJECT_DIR$/content/receptionist_manager.php" />
-        <option value="$PROJECT_DIR$/content/ward_manager.php" />
-        <option value="$PROJECT_DIR$/manage_pharmacist.php" />
         <option value="$PROJECT_DIR$/manage_doctor.php" />
         <option value="$PROJECT_DIR$/manage_department.php" />
         <option value="$PROJECT_DIR$/manage_admin.php" />
-        <option value="$PROJECT_DIR$/manage_receptionist.php" />
         <option value="$PROJECT_DIR$/manage_test.php" />
         <option value="$PROJECT_DIR$/manage_ward.php" />
         <option value="$PROJECT_DIR$/content/doctor_manager.php" />
         <option value="$PROJECT_DIR$/sell_medicine.php" />
-        <option value="$PROJECT_DIR$/manage_medicine.php" />
-        <option value="$PROJECT_DIR$/add_medicine.php" />
         <option value="$PROJECT_DIR$/content/add_medicine.php" />
         <option value="$PROJECT_DIR$/function/delete_medicine.php" />
         <option value="$PROJECT_DIR$/content/medicine_manager.php" />
@@ -113,30 +152,39 @@
         <option value="$PROJECT_DIR$/manage_prescription.php" />
         <option value="$PROJECT_DIR$/content/edit_prescription.php" />
         <option value="$PROJECT_DIR$/edit_prescription.php" />
-        <option value="$PROJECT_DIR$/content/add_medicin_to_patient.php" />
-        <option value="$PROJECT_DIR$/content/pharmacist_manager.php" />
         <option value="$PROJECT_DIR$/content/nav.php" />
         <option value="$PROJECT_DIR$/content/account_manager.php" />
-        <option value="$PROJECT_DIR$/content/dashboard.php" />
-        <option value="$PROJECT_DIR$/add_receptionist.php" />
         <option value="$PROJECT_DIR$/content/add_receptionist.php" />
-        <option value="$PROJECT_DIR$/add_doctor.php" />
         <option value="$PROJECT_DIR$/content/add_doctor.php" />
-        <option value="$PROJECT_DIR$/add_admin.php" />
         <option value="$PROJECT_DIR$/content/add_admin.php" />
         <option value="$PROJECT_DIR$/content/admin_manager.php" />
         <option value="$PROJECT_DIR$/add_ward.php" />
         <option value="$PROJECT_DIR$/content/add_ward.php" />
-        <option value="$PROJECT_DIR$/add_test.php" />
         <option value="$PROJECT_DIR$/content/add_test.php" />
-        <option value="$PROJECT_DIR$/add_bed.php" />
         <option value="$PROJECT_DIR$/content/add_bed.php" />
         <option value="$PROJECT_DIR$/content/add_patient.php" />
-        <option value="$PROJECT_DIR$/add_patient.php" />
         <option value="$PROJECT_DIR$/manage_patient.php" />
         <option value="$PROJECT_DIR$/content/patient_manager.php" />
         <option value="$PROJECT_DIR$/manage_report.php" />
         <option value="$PROJECT_DIR$/content/report_manager.php" />
+        <option value="$PROJECT_DIR$/content/pharmacist_manager.php" />
+        <option value="$PROJECT_DIR$/add_admin.php" />
+        <option value="$PROJECT_DIR$/add_bed.php" />
+        <option value="$PROJECT_DIR$/add_department.php" />
+        <option value="$PROJECT_DIR$/add_doctor.php" />
+        <option value="$PROJECT_DIR$/add_patient.php" />
+        <option value="$PROJECT_DIR$/add_prescription.php" />
+        <option value="$PROJECT_DIR$/add_report.php" />
+        <option value="$PROJECT_DIR$/add_test.php" />
+        <option value="$PROJECT_DIR$/manage_pharmacist.php" />
+        <option value="$PROJECT_DIR$/manage_receptionist.php" />
+        <option value="$PROJECT_DIR$/manage_medicine.php" />
+        <option value="$PROJECT_DIR$/add_receptionist.php" />
+        <option value="$PROJECT_DIR$/add_medicine.php" />
+        <option value="$PROJECT_DIR$/content/add_pharmacist.php" />
+        <option value="$PROJECT_DIR$/content/add_medicin_to_patient.php" />
+        <option value="$PROJECT_DIR$/add_account.php" />
+        <option value="$PROJECT_DIR$/content/dashboard.php" />
       </list>
     </option>
   </component>
@@ -260,12 +308,12 @@
       <workItem from="1482160493169" duration="15823000" />
       <workItem from="1482245940120" duration="7300000" />
       <workItem from="1482744773743" duration="2010000" />
-      <workItem from="1482857787236" duration="1060000" />
+      <workItem from="1482857787236" duration="3699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58878000" />
+    <option name="totallyTimeSpent" value="61517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -275,6 +323,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -285,7 +334,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -306,55 +354,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage_doctor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_medicine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/add_medicine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/delete_doctor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/delete_medicine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit_doctor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/edit_doctor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/edit_medicine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -366,20 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/medicine_manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage_medicine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -398,13 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage_receptionist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="43" column="51" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -419,13 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_prescription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/add_prescription.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -434,27 +405,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.257/add_medicin_to_patient.php" />
-    <entry file="file://$PROJECT_DIR$/content/add_medicin_to_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6380">
-          <caret line="319" column="0" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage_pharmacist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/pharmacist_manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account_manager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-124">
@@ -476,30 +426,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edit_prescription.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
           <folding>
-            <marker date="1482262519825" expanded="true" signature="351:422" placeholder="SELECT * FRO... tbl_prescription" />
-            <marker date="1482262519825" expanded="true" signature="538:563" placeholder="SELECT * FRO... tbl_patient" />
-            <marker date="1482262519825" expanded="true" signature="605:651" placeholder="SELECT * FRO... tbl_patient" />
-            <marker date="1482262519825" expanded="true" signature="726:750" placeholder="SELECT * FRO... tbl_doctor" />
+            <marker date="1482861241724" expanded="true" signature="351:422" placeholder="SELECT * FRO... tbl_prescription" />
+            <marker date="1482861241724" expanded="true" signature="538:563" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861241724" expanded="true" signature="605:651" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861241724" expanded="true" signature="726:750" placeholder="SELECT * FRO... tbl_doctor" />
           </folding>
         </state>
       </provider>
@@ -516,8 +451,8 @@
         <state relative-caret-position="537">
           <caret line="51" column="59" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="59" />
           <folding>
-            <marker date="1482262022378" expanded="true" signature="324:476" placeholder="SELECT * FRO... tbl_prescription" />
-            <marker date="1482262022378" expanded="true" signature="506:636" placeholder="SELECT * FRO... tbl_prescription" />
+            <marker date="1482861241508" expanded="true" signature="324:476" placeholder="SELECT * FRO... tbl_prescription" />
+            <marker date="1482861241508" expanded="true" signature="506:636" placeholder="SELECT * FRO... tbl_prescription" />
           </folding>
         </state>
       </provider>
@@ -529,24 +464,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_receptionist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="57" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/add_doctor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_doctor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="65" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -561,6 +482,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="43" column="52" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -571,24 +493,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/add_test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
           <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="43" column="47" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -603,6 +511,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="43" column="47" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="47" />
+          <folding>
+            <marker date="1482861240757" expanded="true" signature="301:355" placeholder="INSERT INTO tbl_ward... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -613,31 +524,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_bed.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/add_patient.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -649,37 +539,277 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage_patient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <marker date="1482857987197" expanded="true" signature="324:370" placeholder="SELECT * FRO... tbl_patient" />
-            <marker date="1482857987197" expanded="true" signature="413:475" placeholder="SELECT * FRO... tbl_patient" />
-            <marker date="1482857987197" expanded="true" signature="523:548" placeholder="SELECT * FRO... tbl_patient" />
-            <marker date="1482857987197" expanded="true" signature="591:634" placeholder="SELECT * FRO... tbl_patient" />
-            <marker date="1482857987197" expanded="true" signature="656:696" placeholder="SELECT * FRO... tbl_patient" />
-            <marker date="1482857987197" expanded="true" signature="744:767" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage_report.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="46" column="53" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="53" />
           <folding>
-            <marker date="1482858608276" expanded="true" signature="275:393" placeholder="SELECT * FRO... tbl_report" />
-            <marker date="1482858608276" expanded="true" signature="432:568" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861241855" expanded="true" signature="275:393" placeholder="SELECT * FRO... tbl_report" />
+            <marker date="1482861241855" expanded="true" signature="432:568" placeholder="SELECT * FRO... tbl_patient" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/report_manager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+        <state relative-caret-position="189">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/db_evis_hmss.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <marker date="1482861241056" expanded="true" signature="301:355" placeholder="INSERT INTO tbl_test... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_prescription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <marker date="1482861240664" expanded="true" signature="421:537" placeholder="INSERT INTO tbl_prescription... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+          <folding>
+            <marker date="1482861241208" expanded="true" signature="246:268" placeholder="SELECT * FRO... tbl_ward" />
+            <marker date="1482861241208" expanded="true" signature="328:349" placeholder="SELECT * FRO... tbl_bed" />
+            <marker date="1482861241208" expanded="true" signature="403:427" placeholder="SELECT * FRO... tbl_admin" />
+            <marker date="1482861241208" expanded="true" signature="1035:1285" placeholder="INSERT INTO tbl_patient... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_doctor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding>
+            <marker date="1482861240364" expanded="true" signature="245:273" placeholder="SELECT * FRO... tbl_department" />
+            <marker date="1482861240364" expanded="true" signature="846:1112" placeholder="INSERT INTO tbl_doctor... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_department.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_bed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <marker date="1482861239810" expanded="true" signature="299:350" placeholder="INSERT INTO tbl_bed... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <marker date="1482861239894" expanded="true" signature="491:652" placeholder="INSERT INTO tbl_admin... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/pharmacist_manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <marker date="1482860663602" expanded="true" signature="215:243" placeholder="SELECT * FRO... tbl_pharmacist" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/medicine_manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <marker date="1482861241775" expanded="true" signature="324:370" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861241775" expanded="true" signature="413:475" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861241775" expanded="true" signature="523:548" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861241775" expanded="true" signature="591:634" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861241775" expanded="true" signature="656:696" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861241775" expanded="true" signature="744:767" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_pharmacist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <marker date="1482861240956" expanded="true" signature="214:242" placeholder="SELECT * FRO... tbl_pharmacist" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_receptionist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <marker date="1482861240095" expanded="true" signature="212:248" placeholder="SELECT * FRO... tbl_admin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_medicine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <marker date="1482861085374" expanded="true" signature="343:429" placeholder="INSERT INTO tbl_medicine... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_receptionist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding>
+            <marker date="1482861241275" expanded="true" signature="405:556" placeholder="INSERT INTO tbl_admin... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_medicine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <marker date="1482861240317" expanded="true" signature="212:238" placeholder="SELECT * FRO... tbl_medicine" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/add_pharmacist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <marker date="1482861239979" expanded="true" signature="215:243" placeholder="SELECT * FRO... tbl_pharmacist" />
+            <marker date="1482861239979" expanded="true" signature="8432:8621" placeholder="INSERT INTO tbl_pharmacist... " />
+            <marker date="1482861239979" expanded="true" signature="8740:8901" placeholder="INSERT INTO tbl_admin... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/add_medicin_to_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <marker date="1482861192580" expanded="true" signature="5732:5757" placeholder="SELECT * FRO... tbl_patient" />
+            <marker date="1482861192580" expanded="true" signature="5785:5811" placeholder="SELECT * FRO... tbl_medicine" />
+            <marker date="1482861192580" expanded="true" signature="10704:10802" placeholder="UPDATE tbl_m... " />
+            <marker date="1482861192580" expanded="true" signature="11068:11198" placeholder="INSERT into tbl_medicine_history" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <marker date="1482861239690" expanded="true" signature="246:268" placeholder="SELECT * FRO... tbl_ward" />
+            <marker date="1482861239690" expanded="true" signature="328:349" placeholder="SELECT * FRO... tbl_bed" />
+            <marker date="1482861239690" expanded="true" signature="800:1013" placeholder="INSERT INTO account... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#h3#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#h3#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1482862232811" expanded="true" signature="255:289" placeholder="SELECT patie... tbl_patient" />
+            <marker date="1482862232811" expanded="true" signature="389:407" placeholder="SELECT id FR... customer_details" />
+            <marker date="1482862232811" expanded="true" signature="389:425" placeholder="SELECT * FRO... tbl_admin" />
+            <marker date="1482862232811" expanded="true" signature="525:548" placeholder="SELECT * FRO... tbl_admin" />
+            <marker date="1482862232811" expanded="true" signature="641:665" placeholder="SELECT * FRO... tbl_report" />
+            <marker date="1482862232811" expanded="true" signature="761:789" placeholder="SELECT id FR... supplier_details" />
+            <marker date="1482862232811" expanded="true" signature="890:916" placeholder="SELECT bed_i... tbl_bed" />
+            <marker date="1482862232811" expanded="true" signature="1012:1052" placeholder="SELECT depar... tbl_department" />
+            <marker date="1482862232811" expanded="true" signature="1155:1187" placeholder="SELECT docto... tbl_doctor" />
+            <marker date="1482862232811" expanded="true" signature="1285:1313" placeholder="SELECT ward_... tbl_ward" />
+          </folding>
         </state>
       </provider>
     </entry>

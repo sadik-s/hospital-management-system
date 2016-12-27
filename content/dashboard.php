@@ -9,15 +9,25 @@
  $total_department = 0;
  $total_doctor = 0;
  $total_ward = 0;
+ $total_report = 0;
+ $total_user = 0;
  if ($result = $conn->query("SELECT patient_id FROM tbl_patient")) {
     $total_patient = $result->num_rows;
     $result->close();
 	}
- if ($result = $conn->query("SELECT id FROM customer_details")) {
+ if ($result = $conn->query("SELECT * FROM tbl_admin WHERE type=4")) {
     $total_customer = $result->num_rows;
     $result->close();
 	}
- if ($result = $conn->query("SELECT id FROM supplier_details")) {
+if ($result = $conn->query("SELECT * FROM tbl_admin")) {
+	$total_user = $result->num_rows;
+    $result->close();
+	}
+if ($result = $conn->query("SELECT * FROM tbl_report")) {
+	$total_report = $result->num_rows;
+    $result->close();
+	}
+ if ($result = $conn->query("SELECT * FROM tbl_pharmacist")) {
     $total_supplier = $result->num_rows;
     $result->close();
 	}
@@ -46,7 +56,7 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
         <div class="row">
             <div class="col-md-12">
 
-                <h2 class="text-center">Welcome To Evis Hospital Management System</h2>
+                <h2 class="text-center">Welcome To Hospital Management System</h2>
 				<br><br>
 				<div class="col-md-4">
 				 <div class="panel panel-default">
@@ -58,7 +68,7 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo  $total_customer  ?></label> Customers </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo  $total_customer  ?></label> Receptionist </h3>
 
 			    	</div>
 			     </div>
@@ -66,7 +76,7 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
 				<div class="col-md-4">
 				 <div class="panel panel-default">
 			    	<div class="panel-body" style=" background: #9977DB;">
-			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo   $total_supplier  ?></label> Suppliers </h3>
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo   $total_supplier  ?></label> Pharmacist </h3>
 			    	</div>
 			     </div>
 				</div>
@@ -98,7 +108,21 @@ if ($result = $conn->query("SELECT ward_id FROM tbl_ward")) {
 			    	</div>
 			     </div>
 				</div>
-                
+				<div class="col-md-4">
+				 <div class="panel panel-default">
+			    	<div class="panel-body" style=" background: #9977DB;">
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo  $total_report ?></label> Reports </h3>
+			    	</div>
+			     </div>
+				</div>
+                <div class="col-md-4">
+				 <div class="panel panel-default">
+			    	<div class="panel-body" style=" background: #9977DB;">
+			    		<h3 class=""><label style="color: #fff; font-weight: normal"><?php echo  $total_user ?></label> Users </h3>
+			    	</div>
+			     </div>
+				</div>
+
 
                 <!--<h3>Welcome To Hospital Management System</h3>
 				<img src="assets/img/b.jpg"  style="width:304px;height:228px;">-->
