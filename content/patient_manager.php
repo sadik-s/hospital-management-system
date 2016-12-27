@@ -35,6 +35,7 @@
                                 <th>Phone</th>
                                 <th>Admission Date</th>
                                 <th>Release Date</th>
+                                <th>Report</th>
                                 <th>Action</th>
                             </thead>
                             <tbody>
@@ -46,6 +47,7 @@
                                         <td><?php echo $row['patient_phone'] ?></td>
                                         <td><?php echo $row['admission_date'] ?></td>
                                         <td><?php echo $row['release_date'] ?></td>
+                                        <td><a href="manage_report.php?pid=<?php echo $row['patient_id'] ?>">Report</a></td>
                                         <td>
                                             <a href="edit_patient.php?id=<?php echo $row['patient_id'] ?>" class="btn btn-primary" data-toggle="tooltip" title="Edit Patient"><i class="fa fa-pencil-square-o"></i></a>
                                             <a href="function/delete_patient.php?id=<?php echo $row['patient_id'] ?>" class="btn btn-danger" data-toggle="tooltip" title="Delete Patient" onclick="return check_delete();"><i class="fa fa-trash"></i></a>

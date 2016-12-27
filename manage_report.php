@@ -1,6 +1,7 @@
 <?php
     session_start();
     $admin_name=$_SESSION["admin_name"];
+    $type = $_SESSION["type"];
 
     if ($admin_name == NULL)
     {
@@ -8,6 +9,8 @@
     }
     require 'function/db_connect.php';
     $sql = "SELECT * FROM tbl_report AS r, tbl_patient AS p, tbl_test AS t WHERE r.test_id=t.test_id AND r.patient_id=p.patient_id";
+    if(isset($_GET['pid'])) $sql = "SELECT * FROM tbl_report AS r, tbl_patient AS p, tbl_test AS t WHERE r.test_id=t.test_id AND r.patient_id=p.patient_id AND r.patient_id=".$_GET['pid'];
+
     $result = mysqli_query($conn, $sql);
 ?> 
 <!DOCTYPE html>

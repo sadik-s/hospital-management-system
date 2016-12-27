@@ -9,10 +9,15 @@
     require 'function/db_connect.php';
     $type = $_SESSION["type"];
     $id = $_SESSION["id"];
-    if($type==2)
-    $sql = "SELECT * FROM tbl_patient WHERE doc_id = '$id'";
-    else
+    if($type==2){
+        $sql = "SELECT * FROM tbl_patient WHERE doc_id = '$id'";
+        if(isset($_GET['pid'])) $sql = "SELECT * FROM tbl_patient WHERE doc_id = '$id' AND patient_id=".$_GET['pid'];
+    }
+    else{
         $sql = "SELECT * FROM tbl_patient";
+        if(isset($_GET['pid'])) $sql = "SELECT * FROM tbl_patient WHERE patient_id=".$_GET['pid'];
+    }
+
     $result = mysqli_query($conn, $sql);
 ?> 
 <!DOCTYPE html>
