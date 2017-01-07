@@ -27,7 +27,15 @@
                                     <div class="form-group">
                                         <label>*Bed Name</label>
                                         <input type="text" name="bed_name" class="form-control" required>
-                                    </div>        
+                                    </div>
+                                    <div class="form-group">
+                                        <label>BED FEE</label>
+                                        <input type="text" name="bed_fee" class="form-control" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>SIT CAPACITY</label>
+                                        <input type="text" name="bed_total_sit" class="form-control" value="">
+                                    </div>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-info btn-fill">Add Bed</button>

@@ -22,6 +22,7 @@
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
         <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/jquery-ui.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <style>
             .table>thead>tr>th,
@@ -66,7 +67,7 @@
     </body>
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
     <script>
         $( function() {
             $.widget( "custom.combobox", {

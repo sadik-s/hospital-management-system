@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>HMS Login</title>
+        <title>SMS Login</title>
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
@@ -115,7 +115,7 @@
     <body>
         <div class="login">
             <div class="login-header">
-                <h1>HMS Login</h1>
+                <h1>SMS Login</h1>
             </div>
             <form action="http://localhost/hospital_management_system/function/login.php" method="POST">
                 <div class="login-form">

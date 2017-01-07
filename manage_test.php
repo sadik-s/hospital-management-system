@@ -20,6 +20,8 @@
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="assets/css/buttons.dataTables.min.css">
+        <link rel="stylesheet" href="assets/css/">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
         <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -47,9 +49,21 @@
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/js/dataTables.buttons.min.js" type="text/javascript"></script>
+    <script src="assets/js/buttons.flash.min.js" type="text/javascript"></script>
+    <script src="assets/js/jszip.min.js" type="text/javascript"></script>
+    <script src="assets/js/pdfmake.min.js" type="text/javascript"></script>
+    <script src="assets/js/vfs_fonts.js" type="text/javascript"></script>
+    <script src="assets/js/buttons.html5.min.js" type="text/javascript"></script>
+    <script src="assets/js/buttons.print.min.js" type="text/javascript"></script>
     <script>
         $(document).ready(function(){
-            $('#myTable').DataTable();
+            $('#myTable').DataTable( {
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            } );
         });
     </script>
 </html>

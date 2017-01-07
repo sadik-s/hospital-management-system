@@ -33,11 +33,11 @@ $all_test = mysqli_query($conn, $test);
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label>Select Patient</label>
-                                        <select name="patient_id" class="form-control">
+                                        <select name="patient_id" class="form-control" id="combobox">
                                             <?php
                                             while ($row = mysqli_fetch_assoc($all_patient)) {
                                                 ?> 
-                                                <option value="<?php echo $row['patient_id'] ?>"><?php echo $row['patient_name'] ?></option>
+                                                <option value="<?php echo $row['patient_id'] ?>"><?php echo $row['patient_phone'].'('. $row['patient_name'].')';?></option>
                                             <?php } ?>
                                         </select>
                                     </div>        

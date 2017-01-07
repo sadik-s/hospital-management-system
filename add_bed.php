@@ -8,8 +8,10 @@
     }
     require 'function/db_connect.php';
     $bed_name = filter_input(INPUT_POST, 'bed_name');
+    $bed_fee = filter_input(INPUT_POST, 'bed_fee');
+    $bed_total_sit = filter_input(INPUT_POST, 'bed_total_sit');
 
-    $sql = "INSERT INTO tbl_bed (bed_name) VALUES ('$bed_name')";
+    $sql = "INSERT INTO tbl_bed (bed_name,bed_fee,bed_total_sit) VALUES ('$bed_name',$bed_fee,$bed_total_sit)";
 ?> 
 <!DOCTYPE html>
 <html lang="en">
